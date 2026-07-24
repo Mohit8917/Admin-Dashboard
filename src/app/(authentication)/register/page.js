@@ -1,5 +1,4 @@
 "use client";
-  const {register,handleSubmit,formState}=useForm();
 import Button from "@/components/button/index";
 import { Input } from "@/components/input/index";
 import Link from "next/link";
@@ -12,7 +11,7 @@ export default function RegisterForm() {
     console.log(data);
   }
   return (
-    <div className="min-h-screen bg-red-100 flex justify-center items-center flex-col">
+    <div className="w-full min-h-screen bg-red-100 flex justify-center items-center flex-col">
     <form onSubmit={handleSubmit(handleCustomSubmit)} className="bg-white h-[700px] w-[450px] rounded-xl shadow-lg flex flex-col justify-start gap-5 items-start p-10 ">
         <div>
         <h2 className="font-bold">Registration form</h2>

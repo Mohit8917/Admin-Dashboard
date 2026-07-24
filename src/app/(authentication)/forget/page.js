@@ -10,7 +10,7 @@ export default function ForgetForm(){
         console.log(data)
     }
     return(
-     <div className="min-h-screen bg-red-100 flex justify-center items-center flex-col">
+     <div className="min-h-screen bg-red-100 flex justify-center items-center flex-col w-full">
     <form className="bg-white h-[400px] w-[450px] rounded-xl shadow-lg flex flex-col justify-start gap-5 items-start p-10 " onSubmit={handleSubmit(handleCustomSubmit)}>
         <div>
         <h2 className="font-bold">Forget Password</h2>

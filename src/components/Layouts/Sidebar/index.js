@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Sidebar(){
@@ -51,9 +52,9 @@ export default function Sidebar(){
                 </button>
                 {authOpen && (
                     <div className="ml-10 mt-2 flex flex-col gap-2 text-gray-300">
-                        <p>Sign In</p>
-                        <p>Sign Up</p>
-                        <p>Forget Password</p>
+                        <p><Link href={"./login"}>Sign In</Link></p>
+                        <p><Link href={"./register"}>Sign up</Link></p>
+                        <p><Link href={"./forget"}>Forget Password</Link></p>
                     </div>
                 )}
             </div>
