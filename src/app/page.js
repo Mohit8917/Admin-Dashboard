@@ -7,12 +7,11 @@ export default function Home() {
   
     <div className="flex min-h-screen w-full">
     <Sidebar/>
+
     <div className="flex-1 min-w-0">
     <Header/>
     </div>
-    <div>
-      {/* <Card src="" /> */}
-    </div>
+      
     </div>
   );
 }
