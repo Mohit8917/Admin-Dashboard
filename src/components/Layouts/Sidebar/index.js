@@ -8,8 +8,16 @@ export default function Sidebar(){
     const [compOpen,setCompOpen]=useState(false);
     const [menuLevelOpen,setMenuLevelOpen]=useState(false);
     return(
-        <div className="min-h-screen w-64 flex flex-shrink-0">
-            <div className="side-bar min-h-screen mb-10">
+//         .side-bar{
+//   background-color: #202c39;
+//   color: white;
+//   width: 100%; 
+//   min-height: 100vh;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   padding-top: 20px;
+        <div className="min-h-screen w-64 flex flex-shrink-0 ">
+            <div className="side-bar min-h-screen mb-10 bg-gray-900">
                 <h1 className="text-xl">Logo</h1>
                 <div className="flex items-center gap-3 px-4 py-4 rounded-md bg-white/10">
                 <Image src="/bell-regular-full.svg" alt="Cant Load Image" width={20} height={20}/>
