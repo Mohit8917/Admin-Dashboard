@@ -3,7 +3,7 @@ export function Input(props){
     return(
         <div className="flex flex-col gap-[6px]">
                 <label>{labelText}</label>
-                <input type={type} name={inpName} placeholder={place} className={className}/>
+                <input type={type} name={inpName} placeholder={place} className={className} {...props} />
         </div>
     )
 }

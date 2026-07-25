@@ -3,7 +3,7 @@ export default function Images(props){
     const {src,altText,wd,hg,className  }=props;
     return(
         <>
-        <Image src={src} alt={altText} width={wd} height={hg} className={className}/>
+        <Image src={src} alt={altText} width={wd} height={hg} className={className} {...props}/>
         </>
     )
 }
