@@ -17,21 +17,22 @@ export default function Sidebar(){
 //   padding-left: 20px;
 //   padding-right: 20px;
 //   padding-top: 20px;
-        <div className="min-h-screen w-64 flex flex-shrink-0 ">
-            <div className="side-bar min-h-screen mb-10 bg-gray-900">
-                <h1 className="text-xl">Logo</h1>
-                <div className="flex items-center gap-3 px-4 py-4 rounded-md bg-white/10">
+        <div className="min-h-screen w-64 flex flex-shrink-0">
+            <div className="w-full flex-1 bg-gray-800 text-white pl-5 pr-5 pt-5">
+                <h1 className="text-2xl pb-8">Logo</h1>
+
+                <div className="flex items-center gap-3 pb-5 text-slate-400 hover:text-white">
                 <Image src="/bell-regular-full.svg" alt="Cant Load Image" width={20} height={20}/>
                 <p>Dashboard</p>
                 </div>
 
-                <div>
+                <div className="text-slate-500 pb-4">
                     <p>LAYOUTS & PAGES</p>
                 </div>
 
             <div>
                 <button onClick={()=>setPagesOpen(!pagesOpen)} 
-                className="w-full flex items-center justify-between px-3 py-2 text-grey">
+                className="w-full flex items-center justify-between py-2 text-grey-400 ">
                     <div className="flex gap-2 items-center text-gray-300 hover:text-white">
                         <Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/>
                         <span>Pages</span>
@@ -51,7 +52,7 @@ export default function Sidebar(){
 
              <div>
                 <button onClick={()=>setAuthOpen(!authOpen)} 
-                className="w-full flex items-center justify-between px-3 py-2 text-grey">
+                className="w-full flex items-center justify-between py-2 text-grey">
                     <div className="flex gap-2 items-center text-gray-300 hover:text-white">
                         <Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/>
                         <span>Authentication</span>
@@ -67,18 +68,20 @@ export default function Sidebar(){
                 )}
             </div>
 
-            <button className="flex gap-2">
+            <div className="py-2">
+            <button className="flex items-center gap-2">
                 <span><Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/></span>
                 <span>Layouts</span>
             </button>
+            </div>
 
-            <div>
+            <div className="py-4 text-slate-500">
                 <p>UI COMPONENTS</p>
             </div>
 
              <div>
                 <button onClick={()=>setCompOpen(!compOpen)} 
-                className="w-full flex items-center justify-between px-3 py-2 text-grey">
+                className="w-full flex items-center justify-between py-2 text-grey">
                     <div className="flex gap-2 items-center text-gray-300 hover:text-white">
                         <Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/>
                         <span>Components</span>
@@ -98,7 +101,7 @@ export default function Sidebar(){
 
              <div>
                 <button onClick={()=>setMenuLevelOpen(!menuLevelOpen)} 
-                className="w-full flex items-center justify-between px-3 py-2 text-grey">
+                className="w-full flex items-center justify-between py-2 text-grey">
                     <div className="flex gap-2 items-center text-gray-300 hover:text-white">
                         <Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/>
                         <span>Menu Level</span>
@@ -113,21 +116,21 @@ export default function Sidebar(){
                 )}
             </div>
 
-            <div>
+            <div className="py-5 text-slate-500">
                 <p>DOCUMENTATION</p>
             </div>
 
-            <button className="flex gap-2">
+            <button className="flex gap-2 items-center text-slate-400 hover:text-white">
                 <span><Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/></span>
                 <span>Docs</span>
             </button>
 
-            <button className="flex gap-2">
+            <button className="flex gap-2 py-3 items-center text-slate-400 hover:text-white">
                 <span><Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/></span>
                 <span>Changelog</span>
             </button>
 
-            <button className="flex w-full gap-2 bg-purple-400">
+            <button className="flex w-full p-2 bg-indigo-600 items-center">
                 <span><Image src="/angle-down-solid-full.svg" alt="Cant Load Image" width={20} height={20}/></span>
                 <span>Download</span>
             </button>
