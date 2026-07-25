@@ -9,14 +9,9 @@ export default function Sidebar(){
     const [compOpen,setCompOpen]=useState(false);
     const [menuLevelOpen,setMenuLevelOpen]=useState(false);
     return(
-//         .side-bar{
+        
 //   background-color: #202c39;
-//   color: white;
-//   width: 100%; 
-//   min-height: 100vh;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   padding-top: 20px;
+
         <div className="min-h-screen w-64 flex flex-shrink-0">
             <div className="w-full flex-1 bg-gray-800 text-white pl-5 pr-5 pt-5">
                 <h1 className="text-2xl pb-8">Logo</h1>
