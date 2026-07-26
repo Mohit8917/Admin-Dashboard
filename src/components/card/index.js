@@ -13,7 +13,7 @@ export default function Card(props){
                     </div>
                 </div>
                 <div id="right" >
-                    <Images src={image} altText={heading} hg={hg} wd={wd} className="mt-[8] p-2 rounded-sm "/>
+                    <Images src={image} alttext={heading} hg={hg} wd={wd} className="mt-[8] p-2 rounded-sm "/>
                 </div>
             </div>
         </>
