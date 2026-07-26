@@ -3,7 +3,6 @@ import React from "react";
 import { RadialBarChart, RadialBar } from "recharts";
 
 const Chart = () => {
-  // Sample data
   const data = [
     { name: "behind", x: 36, fill: "red" },
     { name: "In-Progress", x: 42, fill: "yellow" },
@@ -28,7 +27,7 @@ const Chart = () => {
     <p className="text-yellow-600">In-Progress</p>
     </div>
     <div>
-    <h1 className="font-bold flex justify-center">22%%</h1>
+    <h1 className="font-bold flex justify-center">22%</h1>
     <p className="text-red-600">Behind</p>
     </div>
     </div>

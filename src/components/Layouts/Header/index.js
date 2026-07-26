@@ -8,14 +8,14 @@ export default function Header(){
                 <input type="search" placeholder="Search" className="text-gray-800 p-2 border-1 border-gray-200 rounded-lg outline-none"/>
             </div>
             <div className="right-header m-10 flex gap-2">
-                <button className="h-9 w-9 rounded-full bg-gray-200 flex flex-col justify-center items-center" >
+                {/* <button className="h-9 w-9 rounded-full bg-gray-200 flex flex-col justify-center items-center" >
                 <Image src="/angle-down-solid-full.svg" alt="menu" height={20} width={20}/>
-                </button>
+                </button> */}
                 <button className="h-9 w-9 rounded-full bg-gray-200 flex flex-col justify-center items-center">
                 <Image src="/bell-regular-full.svg" alt="menu" height={20} width={20}/>
                 </button>
                 <button className="h-9 w-9 rounded-full bg-slate-300 flex flex-col justify-center items-center">
-                <Image src="/wanderercreative-blank-profile-picture-973460.svg" alt="menu" height={20} width={20}/>
+                <Image src="/person.png" alt="menu" height={20} width={20}/>
                 </button>
             </div>
         </header>

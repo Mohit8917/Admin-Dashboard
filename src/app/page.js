@@ -3,6 +3,7 @@ import Header from "@/components/Layouts/Header";
 import Sidebar from "@/components/Layouts/Sidebar";
 import Chart from "@/components/chart";
 import ActiveProjects from "./(authentication)/activeProjects/page";
+import Teams from "./(authentication)/teams/page";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
     </div>
     <ActiveProjects/>
     <Chart />
+    <Teams/>
     </div>
 
     </div>
