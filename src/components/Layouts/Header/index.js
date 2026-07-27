@@ -14,7 +14,7 @@ export default function Header(){
                 <button className="h-9 w-9 rounded-full bg-gray-200 flex flex-col justify-center items-center">
                 <Image src="/bell-regular-full.svg" alt="menu" height={20} width={20}/>
                 </button>
-                <button className="h-9 w-9 rounded-full bg-slate-300 flex flex-col justify-center items-center">
+                <button className="h-9 w-9 rounded-full bg-gray-200 flex flex-col justify-center items-center">
                 <Image src="/person.png" alt="menu" height={20} width={20}/>
                 </button>
             </div>

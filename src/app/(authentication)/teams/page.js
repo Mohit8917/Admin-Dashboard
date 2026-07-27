@@ -7,7 +7,7 @@ export default function Teams() {
     id: 1,
     name: "Anita Parmar",
     email: "anita@example.com",
-    image: "/anita.jpg",
+    image: "/person.png",
     role: "Front End Developer",
     lastActivity: "3 May, 2023",
   },
@@ -15,7 +15,7 @@ export default function Teams() {
     id: 2,
     name: "Jitu Chauhan",
     email: "jituchauhan@example.com",
-    image: "/jitu.jpg",
+    image: "/person.png",
     role: "Project Director",
     lastActivity: "Today",
   },
@@ -23,7 +23,7 @@ export default function Teams() {
     id: 3,
     name: "Sandeep Chauhan",
     email: "sandeepchauhan@example.com",
-    image: "/sandeep.jpg",
+    image: "/person.png",
     role: "Full- Stack Developer",
     lastActivity: "Yesterday",
   },
@@ -31,7 +31,7 @@ export default function Teams() {
     id: 4,
     name: "Amanda Darnell",
     email: "amandadarnell@example.com",
-    image: "/amanda.jpg",
+    image: "/person.png",
     role: "Account Manager",
     lastActivity: "3 May, 2023",
   },
@@ -44,27 +44,17 @@ const teamColumns = [
 
     render: (row) => (
       <div className="flex items-center gap-5">
-
-        {/* Profile Image */}
         <Image
           src={row.image}
           alt={row.name}
-          width={50}
-          height={50}
-          className="h-12 w-12 rounded-full object-cover"
-        />
+          width={40}
+          height={40}
+          className="h-10 w-10 rounded-full object-cover" />
 
-        {/* Name and Email */}
         <div>
-          <p className="font-medium text-gray-900">
-            {row.name}
-          </p>
-
-          <p className="text-gray-900">
-            {row.email}
-          </p>
+          <p className="font-medium text-gray-900"> {row.name} </p>
+          <p className="text-gray-900"> {row.email} </p>
         </div>
-
       </div>
     ),
   },
@@ -84,19 +74,13 @@ const teamColumns = [
     label: "",
 
     render: () => (
-      <button className="text-gray-400 text-xl">
-        ⋮
-      </button>
+      <button className="text-gray-400 text-xl"> ⋮ </button>
     ),
   },
 ];
   return (
-    <div className="p-8">
-      <Table
-        title="Active Projects"
-        columns={teamColumns}
-        data={teams}
-      />
+    <div className="p-8 flex flex 1">
+      <Table title="Teams" columns={teamColumns} data={teams} /> 
     </div>
   );
 }

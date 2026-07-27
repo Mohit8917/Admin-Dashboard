@@ -11,7 +11,7 @@ const Chart = () => {
   ];
 
   return (
-    <div className="w-[400px] h-[400px] bg-grey-300 flex flex-col">
+    <div className="w-[400px] h-[400px] bg-grey-300 flex flex-col flex 1">
     <div className="mt-[50]">
     <RadialBarChart width={400} height={300} data={data}>
       <RadialBar minAngle={15} dataKey="x" />

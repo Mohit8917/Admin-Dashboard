@@ -87,17 +87,13 @@ export default function ActiveProjects() {
 
       render: (row) => (
         <div className="flex items-center gap-4">
-          {/* Percentage */}
           <span className="w-10">{row.progress}%</span>
-
-          {/* Progress Bar */}
           <div className="h-1.5 w-28 rounded-full bg-gray-200">
             <div
               className="h-full rounded-full bg-violet-600"
               style={{
                 width: `${row.progress}%`,
-              }}
-            />
+              }} />
           </div>
         </div>
       ),
@@ -106,12 +102,7 @@ export default function ActiveProjects() {
 
   return (
     <div className="p-8">
-      <Table
-        title="Active Projects"
-        columns={columns}
-        data={projects}
-        footerText="View Projects"
-      />
+      <Table title="Active Projects" columns={columns} data={projects} footerText="View Projects"/>
     </div>
   );
 }

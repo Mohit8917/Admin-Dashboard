@@ -8,14 +8,11 @@ export default function Table({
   return (
     <section className="overflow-hidden rounded-lg border border-gray-200 bg-white">
       <div className="border-b border-gray-200 px-6 py-4">
-        <h2 className="text-xl font-semibold text-gray-900">
-          {title}
-        </h2>
+        <h2 className="text-xl font-semibold text-gray-900"> {title} </h2>
       </div>
 
       <div className="overflow-x-auto">
         <table className="w-full min-w-[700px]">
-
           <thead className="border-b border-gray-400 bg-slate-100">
             <tr>
               {columns.map((column) => (
