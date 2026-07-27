@@ -18,23 +18,23 @@ export default function RegisterForm() {
         <p className="font-thin">Please enter your user information.</p>
         </div>
     <div>
-    <Input labelText="Username or Email" type="text" inpName="Username" place="Enter Name" className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("username",{required:"UserName is Required"})}/>
+    <Input labeltext="Username or Email" type="text" inpname="Username" place="Enter Name" className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("username",{required:"UserName is Required"})}/>
     { errors.username && <p className="text-red-500">{errors.username.message}</p>}
     </div>
     <div>
-    <Input labelText="Email" type="email" inpName="Email" place="Enter address here"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
+    <Input labeltext="Email" type="email" inpname="Email" place="Enter address here"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
     {errors.email && <p className="text-red-500">{errors.email.message}</p>}
     </div>
     <div>
-    <Input labelText="password" type="password" inpName="password" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("password",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
+    <Input labeltext="password" type="password" inpname="password" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("password",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
     {errors.password && <p className="text-red-500">{errors.password.message}</p>}
     </div>
     <div>
-    <Input labelText="Confirm Password" type="password" inpName="Confirm" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("Confirmpassword",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
+    <Input labeltext="Confirm Password" type="password" inpname="Confirm" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("Confirmpassword",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
     {errors.Confirmpassword && <p className="text-red-500">{errors.Confirmpassword.message}</p>}
     </div>
     <div>
-    <Button btnText="Create Account" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
+    <Button btntext="Create Account" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
     </div>
     <div className="flex gap-[50]"> 
     <Link href={"./login"} className="text-blue-600">Already User?Login</Link>

@@ -1,8 +1,8 @@
 export default function Button(props){
-    const {btnText,type,className}=props;
+    const {btntext,type,className}=props;
     return(
         <>
-        <button type={type} className={className} {...props}>{btnText}</button>
+        <button type={type} className={className} {...props}>{btntext}</button>
         </>
     )
 } 

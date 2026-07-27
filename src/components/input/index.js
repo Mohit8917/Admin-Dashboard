@@ -1,9 +1,9 @@
 export function Input(props){
-    const {labelText,type,inpName,place,className}=props
+    const {labeltext,type,inpname,place,className}=props
     return(
         <div className="flex flex-col gap-[6px]">
-                <label>{labelText}</label>
-                <input type={type} name={inpName} placeholder={place} className={className} {...props} />
+                <label>{labeltext}</label>
+                <input type={type} name={inpname} placeholder={place} className={className} {...props} />
         </div>
     )
 }

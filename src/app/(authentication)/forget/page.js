@@ -17,10 +17,10 @@ export default function ForgetForm(){
         <p className="font-thin">Don't worry, we'll send you an email to reset your password.</p>
         </div>
     <div>
-    <Input labelText="Email" type="email" inpName="Email" place="Enter address here"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
+    <Input labeltext="Email" type="email" inpname="Email" place="Enter address here"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
     {errors.email && <p className="text-red-500">{errors.email.message}</p>}
     </div> 
-    <Button btnText="Reset  Password" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
+    <Button btntext="Reset  Password" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
     <div className="flex gap-[50] "> 
     <Link href={"./login"} className="text-black-300">Don't have an account? <p className="text-blue-400">Sign In</p></Link>
     </div>

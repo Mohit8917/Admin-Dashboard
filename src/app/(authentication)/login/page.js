@@ -17,14 +17,14 @@ export default function LoginForm(){
         <p className="font-thin">Please enter your user information.</p>
         </div>
     <div>
-    <Input labelText="Email" type="email" inpName="Email" place="Enter address he+re"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
+    <Input labeltext="Email" type="email" inpname="Email" place="Enter address he+re"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
     {errors.email && <p className="text-red-500">{errors.email.message}</p>}
     </div>
     <div>
-    <Input labelText="password" type="password" inpName="password" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("password",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
+    <Input labeltext="password" type="password" inpname="password" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("password",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
     {errors.password && <p className="text-red-500">{errors.password.message}</p>}
     </div>
-    <Button btnText="Sign In" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
+    <Button btntext="Sign In" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
     <div className="flex gap-[50]"> 
     <Link href={"./register"} className="text-blue-600">Create An Account</Link>
     <Link href={"./forget"} className="text-black-500">Forget your password?</Link>
