@@ -16,10 +16,10 @@ export default function Home() {
     <Card heading={"Project"} Num={"32"} task={"27 Completed"} image={"/project.svg"}  hg={"50"} wd={"50"} />
     <Card heading={"Active Task"} Num={"57"} task={"24 Completed"} image={"/task.svg"}  hg={"50"} wd={"50"} />
     <Card heading={"Teams"} Num={"6"} task={"Working"} image={"/team.svg"}  hg={"50"} wd={"50"} />
-    <Card heading={"Productivity"} Num={"79%"} task={"Increasing Day by Day"} image={"/productivity.svg"}  hg={"50"} wd={"50"} />
+    {/* <Card heading={"Product"} Num={"79%"} task={`Increasing Day by Day`} image={"/productivity.svg"}  hg={"60"} wd={"60"} /> */}
     <Card heading={"Reviews"} Num={"32"} task={"Patner Reviews"} image={"/review.svg"}  hg={"50"} wd={"50"} />
     </div>
-    <ActiveProjects/>
+    <ActiveProjects/  >
 
     <div className="flex flex-1 min-w-0">
     <Chart/>

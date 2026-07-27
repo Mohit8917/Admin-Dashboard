@@ -11,10 +11,10 @@ export default function RegisterForm() {
     console.log(data);
   }
   return (
-    <div className="w-full min-h-screen bg-red-100 flex justify-center items-center flex-col">
+    <div className="w-full min-h-screen bg-gray-100 flex justify-center items-center flex-col">
     <form onSubmit={handleSubmit(handleCustomSubmit)} className="bg-white h-[700px] w-[450px] rounded-xl shadow-lg flex flex-col justify-start gap-5 items-start p-10 ">
         <div>
-        <h2 className="font-bold">Registration form</h2>
+        <h2 className="font-bold text-xl">Registration form</h2>
         <p className="font-thin">Please enter your user information.</p>
         </div>
     <div>
@@ -34,10 +34,10 @@ export default function RegisterForm() {
     {errors.Confirmpassword && <p className="text-red-500">{errors.Confirmpassword.message}</p>}
     </div>
     <div>
-    <Button btntext="Create Account" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
+    <Button btntext="Create Account" className="bg-indigo-600 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
     </div>
     <div className="flex gap-[50]"> 
-    <Link href={"./login"} className="text-blue-600">Already User?Login</Link>
+    <Link href={"./login"} className="text-blue-600 hover:transition-all">Already User?Login</Link>
     <Link href={"./forget"} className="text-black-500">Forget your password?</Link>
     </div>
     </form>

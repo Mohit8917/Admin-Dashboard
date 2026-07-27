@@ -4,7 +4,7 @@ export default function Card(props){
     const {heading,Num,task,image,hg,wd}=props;
     return(
         <>
-            <div className="w-[250px] h-[150px] flex justify-around border-2 rounded-xl bg-white">
+            <div className="w-[300px] h-[150px] flex justify-around border-2 rounded-xl bg-white">
                 <div id="left" className="flex flex-col justify-around">
                     <h1 className="font-semibold">{heading}</h1>
                     <div id="lower">
@@ -13,7 +13,7 @@ export default function Card(props){
                     </div>
                 </div>
                 <div id="right" >
-                    <Images src={image} alttext={heading} hg={hg} wd={wd} className="mt-[8] p-2 rounded-sm "/>
+                    <Images src={image} alttext={heading} hg={hg} wd={wd} className="p-2"/>
                 </div>
             </div>
         </>

@@ -10,10 +10,10 @@ export default function LoginForm(){
         console.log(data);
     }
     return(
-     <div className="min-h-screen bg-red-100 flex justify-center items-center flex-col">
+     <div className="min-h-screen bg-gray-100 flex justify-center items-center flex-col">
     <form className="bg-white h-[480px] w-[450px] rounded-xl shadow-lg flex flex-col justify-start gap-5 items-start p-10 " onSubmit={handleSubmit(handleCustomSubmit)}>
         <div>
-        <h2 className="font-bold">Login form</h2>
+        <h2 className="font-bold text-xl">Login form</h2>
         <p className="font-thin">Please enter your user information.</p>
         </div>
     <div>
@@ -24,7 +24,7 @@ export default function LoginForm(){
     <Input labeltext="password" type="password" inpname="password" place="******"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("password",{required:"Password Required",minLength:{value:8,message:"Password should be of 8 character"},maxLength:{value:16,message:"Password should be of 16 character"}})}/>
     {errors.password && <p className="text-red-500">{errors.password.message}</p>}
     </div>
-    <Button btntext="Sign In" className="bg-blue-400 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
+    <Button btntext="Sign In" className="bg-indigo-600 border-1 w-[350px] h-[40px] rounded-xl text-white"/>
     <div className="flex gap-[50]"> 
     <Link href={"./register"} className="text-blue-600">Create An Account</Link>
     <Link href={"./forget"} className="text-black-500">Forget your password?</Link>

@@ -7,7 +7,7 @@ const Chart = () => {
     { name: "behind", x: 36, fill: "red" },
     { name: "In-Progress", x: 42, fill: "yellow" },
     { name: "Completed", x: 76, fill: "green" },
-    { name: "white", x: 90, fill: "white" },
+    { name: "white", x: 90, fill: "#f3f4f6" },
   ];
 
   return (
