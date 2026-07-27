@@ -10,7 +10,7 @@ export default function LoginForm(){
         console.log(data);
     }
     return(
-     <div className="min-h-screen bg-gray-100 flex justify-center items-center flex-col">
+     <div className="min-h-screen bg-gray-800 flex justify-center items-center flex-col">
     <form className="bg-white h-[480px] w-[450px] rounded-xl shadow-lg flex flex-col justify-start gap-5 items-start p-10 " onSubmit={handleSubmit(handleCustomSubmit)}>
         <div>
         <h2 className="font-bold text-xl">Login form</h2>
