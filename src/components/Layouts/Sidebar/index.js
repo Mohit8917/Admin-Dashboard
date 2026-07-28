@@ -3,11 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+
 export default function Sidebar(){
     const [pagesOpen,setPagesOpen]=useState(false);
     const [authOpen,setAuthOpen]=useState(false);
     const [compOpen,setCompOpen]=useState(false);
     const [menuLevelOpen,setMenuLevelOpen]=useState(false);
+    function handleNavigation(){
+        console.log("Page Opened");
+    }
     return(
         <div className="min-h-screen w-64 flex flex-shrink-0 fixed">
             <div className="w-full flex-1 bg-gray-800 text-white pl-5 pr-5 pt-5">
@@ -34,7 +38,8 @@ export default function Sidebar(){
                 {pagesOpen && (
                     <div className="pl-7 mt-2 flex flex-col gap-2 text-gray-300">
                         <p>Profile</p>
-                        <p>Settings</p>
+                        {/* <p>Setting</p> */}
+                        <p><Link href="/GeneralSetting">Settings</Link></p>
                         <p>Billing</p>
                         <p>Pricing</p>
                         <p>404 Error</p>
@@ -83,7 +88,7 @@ export default function Sidebar(){
                 {compOpen && (
                     <div className="pl-7 mt-2 flex flex-col gap-2 text-gray-300">
                         <p>Profile</p>
-                        <p>Settings</p>
+                        <p>Setting</p>
                         <p>Billing</p>
                         <p>Pricing</p>
                         <p>404 Error</p>

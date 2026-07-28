@@ -17,7 +17,7 @@ export default function LoginForm(){
         <p className="font-thin">Please enter your user information.</p>
         </div>
     <div>
-    <Input labeltext="Email" type="email" inpname="Email" place="Enter address he+re"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
+    <Input labeltext="Email" type="email" inpname="Email" place="Enter address here"  className="w-[350px] border-1 border-black-300 rounded-lg px-4 py-2" {...register("email",{required:"Email Required"})}/>
     {errors.email && <p className="text-red-500">{errors.email.message}</p>}
     </div>
     <div>
