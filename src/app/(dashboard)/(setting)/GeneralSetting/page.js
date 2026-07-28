@@ -10,12 +10,22 @@ export default function GeneralSetting() {
     console.log(data);
   }
   return (
-    <div>
+    <div> 
+        <div className="flex flex-col p-6 text">
+        <p className="font-bold text-2xl">General</p>
+        <p>_____________________________________________________________________________________________________________________________________________________________________________________</p>
+      </div>
+    <div className="flex justify-around">
+      <div>
+        <p className="font-bold">General Setting</p>
+        <p>Profile configuration Settings</p>
+      </div>
+    <div className="flex flex-col">
     <div className="bg-gray-100 h-[800px] w-[400px] p-8 rounded-xl">
         <p>General Settings</p>
         <div className="flex gap-18">
           <div id="left">
-            <p className="text-black-300 font-semibold">Avatar</p>
+            <p className="text-black-300 font-semibold">Avatar</p> 
           </div>
           <div id="right" className="flex gap-2">
             <Images
@@ -29,7 +39,7 @@ export default function GeneralSetting() {
               <Button
                 btntext={"Change"}
                 className="border-1 rounded-sm p-1"
-              />
+                />
               <Button
                 btntext={"Remove"}
                 className="border-1 rounded-sm p-1"
@@ -51,7 +61,7 @@ export default function GeneralSetting() {
               place="Enter Name"
               className="w-[300px] border-1 border-black-300 rounded-lg px-2 py-2"
               {...register("username", { required: "UserName is Required" })}
-            />
+              />
             {errors.username && (
               <p className="text-red-500">{errors.username.message}</p>
             )}
@@ -64,7 +74,7 @@ export default function GeneralSetting() {
               place="Enter address here"
               className="w-[300px] border-1 border-black-300 rounded-lg px-2 py-2"
               {...register("email", { required: "Email Required" })}
-            />
+              />
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
             )}
@@ -85,7 +95,7 @@ export default function GeneralSetting() {
               inpname="Country"
               place="Enter Country  "
               className="w-[300px] border-1 border-black-300 rounded-lg px-2 py-2"
-            />
+              />
           </div>
            <div>
             <Input
@@ -95,7 +105,7 @@ export default function GeneralSetting() {
               place="Enter address"
               className="w-[300px] border-1 border-black-300 rounded-lg px-2 py-2"
               {...register("address", { required: "Address Required" })}
-            />
+              />
             {errors.address && (
               <p className="text-red-500">{errors.address.message}</p>
             )}
@@ -108,7 +118,7 @@ export default function GeneralSetting() {
               place="Enter Zip code"
               className="w-[300px] border-1 border-black-300 rounded-lg px-2 py-2"
               {...register("Zip", { required: "Code Required" })}
-            />
+              />
             {errors.Zip && (
               <p className="text-red-500">{errors.Zip.message}</p>
             )}
@@ -127,5 +137,7 @@ export default function GeneralSetting() {
         </div>
     </div>
     </div>
+    </div>
+  </div>
   );
 }
