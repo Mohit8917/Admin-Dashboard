@@ -4,6 +4,7 @@ import Sidebar from "@/components/Layouts/Sidebar";
 import Chart from "@/components/chart";
 import ActiveProjects from "./(authentication)/activeProjects/page";
 import Teams from "./(authentication)/teams/page";
+import Projects from "./tables/ProjectContributions/page";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
     <Chart/>
     <Teams/>
     </div>
+    <Projects/>
 
     </div>
 

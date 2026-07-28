@@ -1,4 +1,5 @@
 export default function Table({
+  showHeader=true,
   title,
   columns,
   data,
@@ -7,12 +8,17 @@ export default function Table({
 }) {
   return (
     <section className="overflow-hidden rounded-lg border border-gray-200 bg-white">
+      {title &&(
       <div className="border-b border-gray-200 px-6 py-4">
         <h2 className="text-xl font-semibold text-gray-900"> {title} </h2>
       </div>
+        )
+      }
 
       <div className="overflow-x-auto">
         <table className="w-full min-w-[700px]">
+          {
+            showHeader && (
           <thead className="border-b border-gray-400 bg-slate-100">
             <tr>
               {columns.map((column) => (
@@ -24,6 +30,8 @@ export default function Table({
               ))}
             </tr>
           </thead>
+            )
+          }
 
           <tbody>
             {data.map((row) => (
