@@ -28,7 +28,6 @@ export default function RootLayout({ children }) {
 
       <div className="flex-1 min-w-0 bg-gray-100 pl-64">
         <Header />
-
         {children}
       </div>
     </div>
