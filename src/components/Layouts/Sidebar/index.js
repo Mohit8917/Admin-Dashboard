@@ -40,7 +40,7 @@ export default function Sidebar(){
                         <p>Profile</p>
                         {/* <p>Setting</p> */}
                         <p><Link href="/GeneralSetting">Settings</Link></p>
-                        <p>Billing</p>
+                        <p><Link href="/CurrentPreview">Billing</Link></p>
                         <p>Pricing</p>
                         <p>404 Error</p>
                     </div>
