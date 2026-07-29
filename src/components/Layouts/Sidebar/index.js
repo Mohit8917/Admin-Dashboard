@@ -37,8 +37,7 @@ export default function Sidebar(){
                 </button>
                 {pagesOpen && (
                     <div className="pl-7 mt-2 flex flex-col gap-2 text-gray-300">
-                        <p>Profile</p>
-                        {/* <p>Setting</p> */}
+                        <p><Link href="/Profile">Profile</Link></p>
                         <p><Link href="/GeneralSetting">Settings</Link></p>
                         <p><Link href="/CurrentPreview">Billing</Link></p>
                         <p>Pricing</p>

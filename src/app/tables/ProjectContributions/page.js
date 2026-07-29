@@ -1,6 +1,6 @@
 import Table from "@/components/table";
 import Image from "next/image";
-export default function Projects(){
+export default function ProjectContributions(){
     const projects=[
         {
             id:1,
@@ -10,27 +10,27 @@ export default function Projects(){
         },
         {
             id:2,
-            name:"Slack Figma Design UI",
+            name:"3D Character Modeling",
             desc:"Project description and details about...",
-            image:"/slake.jpg",
+            image:"/3d-modeling.jpg",
         },
         {
             id:3,
-            name:"Slack Figma Design UI",
+            name:"Dropbox Design System",
             desc:"Project description and details about...",
-            image:"/slake.jpg",
+            image:"/dropbox.png",
         },
         {
             id:4,
-            name:"Slack Figma Design UI",
+            name:"Webapp Design System",
             desc:"Project description and details about...",
-            image:"/slake.jpg",
+            image:"/webapp.png",
         },
         {
             id:5,
-            name:"Slack Figma Design UI",
+            name:"GitHub Event Design",
             desc:"Project description and details about...",
-            image:"/slake.jpg",
+            image:"/github.png",
         }
     ];
 

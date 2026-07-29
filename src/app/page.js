@@ -1,8 +1,8 @@
 import Card from "@/components/card";
 import Chart from "@/components/chart";
-import ActiveProjects from "./(authentication)/activeProjects/page";
-import Teams from "./(authentication)/teams/page";
-// import GeneralSetting from "./(setting)/GeneralSetting/page";
+import ActiveProjects from "./tables/activeProjects/page";
+import Teams from "./tables/teams/page";
+// import Projects from "./tables/ProjectContributions/page";
 
 export default function Home() {
   return (
@@ -19,12 +19,13 @@ export default function Home() {
     {/* <Card heading={"Product"} Num={"79%"} task={`Increasing Day by Day`} image={"/productivity.svg"}  hg={"60"} wd={"60"} /> */}
     <Card heading={"Reviews"} Num={"32"} task={"Patner Reviews"} image={"/review.svg"}  hg={"50"} wd={"50"} />
     </div>
-    <ActiveProjects/  >
+    <ActiveProjects/>
     
     <div className="flex flex-1 min-w-0">
     <Chart/>
     <Teams/>
     </div>
+    {/* <Projects/> */}
     {/* <GeneralSetting /> */}
   
     </>
