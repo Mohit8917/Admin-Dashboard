@@ -63,7 +63,7 @@ export default function ProjectContributions(){
     ]
 
     return(
-        <div className="p-8 flex flex-1">
+        <div className="flex flex-1">
             <Table title="Projects Contributions" showHeader={false} columns={projectColumns} data={projects}/>
         </div>
     )
