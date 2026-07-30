@@ -1,16 +1,25 @@
 import ActivityFeed from "@/app/tables/ActivityFeed/page";
 import MyTeams from "@/app/tables/myTeams/page";
 import ProjectContributions from "@/app/tables/ProjectContributions/page";
+import Card from "@/components/Cards";
+import CardBody from "@/components/Cards/cardbody";
+import CardHeader from "@/components/Cards/cardheader";
 
 export default function Profile() {
   return (
-    <div className="bg-gray-200 flex flex-col flex-1 p-5">
-
+    <div className="bg-gray-200 ">
+      <div className="gap-5 p-5">
       <h1 className="text-gray-800 font-bold p-5 text-2xl">Overview</h1>
-      <hr className="p-2 outline-gray-900"/>
+      <hr className=""/>
+      </div>
 
+    <div className="flex flex-1 gap-5 p-5">
+    <Card>
       <div className="bg-white p-5 flex flex-col flex-1 rounded">
+      <CardHeader>
         <h1>About Me</h1>
+      </CardHeader>
+      <CardBody>
         <p>BIO</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse
@@ -30,11 +39,16 @@ export default function Profile() {
         <p>popaya@gmail.com</p>
     </div>
     </div>
+      </CardBody>
       </div>
-      
+    </Card>
       <ProjectContributions />
+    </div>
+
+    <div className="flex flex-1 gap-5 p-5">
       <MyTeams />
       <ActivityFeed />
+    </div>
     </div>
   );
 }
