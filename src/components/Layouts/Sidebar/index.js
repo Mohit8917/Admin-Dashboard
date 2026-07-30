@@ -19,7 +19,7 @@ export default function Sidebar(){
                 <Image src="/pt.webp" height={150} width={150}alt="Popaya" className="pb-8"/>
                 <div className="flex items-center gap-3 pb-5 font-bold">
                 <Image src="/house-regular-full.svg" alt="Cant Load Image" width={20} height={20}/>
-                <Link href="#"><p>Dashboard</p></Link>
+                <Link href="/"><p>Dashboard</p></Link>
                 </div>
 
                 <div className="text-slate-500 pb-4">
